@@ -290,6 +290,43 @@ body {
   #HEADER
 \*-----------------------------------*/
 
+.card {
+  border: none;
+}
+img,
+.card-img-top {
+  border-radius: 0em;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 5;
+  }
+}
+
+.header-image-banner{
+  padding: 40px;
+  border-radius: 60px;
+}
+
 .header {
   background: var(--viridian-green);
   padding-block: 20px;
@@ -398,7 +435,23 @@ body {
 
 
 
+.custom-button {
+  display: inline-block;
+  background-color: var(--viridian-green); /* Change color as per your preference */
+  padding: 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff; /* Change color as per your preference */
+  transition: background-color 0.3s ease;
+}
 
+.custom-button:hover {
+  background-color: var(--mikado-yellow); /* Change color as per your preference */
+}
+
+.custom-button img {
+  width: 50px;
+}
 
 /*-----------------------------------*\
   #DESTINATION
@@ -416,7 +469,6 @@ body {
 
 .destination-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
